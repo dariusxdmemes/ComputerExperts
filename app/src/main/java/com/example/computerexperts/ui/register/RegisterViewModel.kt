@@ -31,7 +31,6 @@ class RegisterViewModel: ViewModel() {
     }
 
     fun submit() {
-        println("SUBMIT LLAMADO")
         viewModelScope.launch {
             state = state.copy(isLoading = true, error = null)
 
